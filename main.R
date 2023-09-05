@@ -1,7 +1,7 @@
 suppressPackageStartupMessages({
   library(tercen)
   library(dplyr, warn.conflicts = FALSE)
-  library(flowVS)
+  library(flowCore)
 })
 
 ctx = tercenCtx()
@@ -13,8 +13,8 @@ rownames(df) <- 1:nrow(df)
 
 ff <- tim::matrix_to_flowFrame(df)
 fs <- flowSet(ff)
-pars <- flowVS::estParamFlowVS(fs, channels = rn$label)
-fs_trans <- flowVS::transFlowVS(fs, rn$label, pars)
+pars <- flowCore::estimateLogicle(ff, channels = rn$label)
+fs_trans <- transform(ff, pars)
 
 df_out <- exprs(fs_trans[[1]])
 colnames(df_out) <- seq_len(ncol(df_out)) - 1L
