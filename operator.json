@@ -1,9 +1,10 @@
 {
-  "name": "Template_R_operator",
-  "description": "Calculate the mathematical average of the data points in a cell.",
-  "tags": ["basic statistics"],
+  "name": "flowVS",
+  "description": "Perform a channel-specific data tranformation.",
+  "tags": ["data transformation", "flow cytometry"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template-R-operator-lite"],
+  "container": "tercen/flowvs_operator:latest"
+  "urls": ["https://github.com/tercen/flowvs_operator"],
   "properties": []
 }
 
