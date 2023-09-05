@@ -12,11 +12,10 @@ colnames(df) <- rn$label
 rownames(df) <- 1:nrow(df)
 
 ff <- tim::matrix_to_flowFrame(df)
-fs <- flowSet(ff)
 pars <- flowCore::estimateLogicle(ff, channels = rn$label)
 fs_trans <- transform(ff, pars)
 
-df_out <- exprs(fs_trans[[1]])
+df_out <- exprs(fs_trans)
 colnames(df_out) <- seq_len(ncol(df_out)) - 1L
 
 df_out %>% 
