@@ -1,7 +1,6 @@
 FROM tercen/runtime-r40:4.0.4-4
 
-RUN sudo apt-get update \
-  apt-get install cmake tk
+RUN apt update && apt install -y cmake tk
 
 ENV RENV_VERSION 0.17.3
 RUN R -e "install.packages('remotes', repos = c(CRAN = 'https://cran.r-project.org'))"
