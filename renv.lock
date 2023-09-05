@@ -1084,19 +1084,6 @@
       ],
       "Hash": "26fa77e707223e1ce042b2b5d09993dc"
     },
-    "misc3d": {
-      "Package": "misc3d",
-      "Version": "0.9-1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "grDevices",
-        "graphics",
-        "stats",
-        "tcltk"
-      ],
-      "Hash": "c075218a4fc802bab009a7f5e01bb686"
-    },
     "mtercen": {
       "Package": "mtercen",
       "Version": "1.0.8",
