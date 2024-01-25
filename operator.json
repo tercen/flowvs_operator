@@ -1,6 +1,6 @@
 {
   "name": "Logicle",
-  "description": "Perform a channel-specific logicle data tranformation.",
+  "description": "Performs a channel-specific logicle data tranformation.",
   "tags": [
     "flow cytometry",
     "preprocessing",
