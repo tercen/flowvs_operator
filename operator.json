@@ -1,10 +1,16 @@
 {
   "name": "Logicle",
   "description": "Perform a channel-specific logicle data tranformation.",
-  "tags": ["data transformation", "flow cytometry"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/logicle_operator"],
+  "tags": [
+    "flow cytometry",
+    "preprocessing",
+    "transformation"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/logicle_operator"
+  ],
   "properties": []
 }
-
-
